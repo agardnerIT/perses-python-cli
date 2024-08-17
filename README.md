@@ -18,8 +18,12 @@ Python CLI to create and manage Perses dashboards.
 
 This is the minimal working example. Relies on above defaults.
 
+- Download binary from [releases](https://github.com/agardnerIT/perses-python-cli/releases/latest).
+- Rename it to `persescli`
+- Make it executable and add to `PATH`.
+
 Create a dashboard called `foo` and save it as `./foo.json`
 
 ```sh {"id":"01J5FPD49C4A85T452HRPY5DVC"}
-python perses.py --dashboard-name foo
+./persescli --dashboard-name foo
 ```
