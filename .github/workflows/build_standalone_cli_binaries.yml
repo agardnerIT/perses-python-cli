@@ -1,4 +1,4 @@
-name: Build Perces Python CLI Binaries
+name: Build Perses Python CLI Binaries
 on:
   workflow_dispatch:
     inputs:
@@ -32,7 +32,7 @@ jobs:
         run: "python -m PyInstaller --onefile perses.py"
       - name: "Upload Binary to S3"
         run: |
-          aws s3 cp dist/perses.exe s3://${{ secrets.BUCKET_NAME }}/perces_${{ inputs.version }}.exe
+          aws s3 cp dist/perses.exe s3://${{ secrets.BUCKET_NAME }}/perses_${{ inputs.version }}.exe
   linux_x64_build_binary:
     name: "[LIN x64] Build Self Contained Binary"
     runs-on: ubuntu-20.04
