@@ -14,7 +14,9 @@ Python CLI to create and manage Perses dashboards.
 - `--debug` (optional. defaults to `False`)
 - `--version` (prints version of this CLI and exits)
 
-## Create a dashboard
+## Examples
+
+### Create a dashboard
 
 This is the minimal working example. Relies on above defaults.
 
@@ -24,6 +26,12 @@ This is the minimal working example. Relies on above defaults.
 
 Create a dashboard called `foo` and save it as `./foo.json`
 
-```sh {"id":"01J5FPD49C4A85T452HRPY5DVC"}
+```sh
 ./persescli --dashboard-name foo
+```
+
+### Create dashboard which belongs to `project1`, defaults to a `duration` of `6h` and a `refresh interval` of `10s`:
+
+```
+./persescli --dashboard-name=foo --project-name=project1 --duration=6h --refresh-interval=10s
 ```
